@@ -17,3 +17,7 @@ export function formatViews(views: number) {
   if (views <= 1) return `${views} view`;
   else return `${views} views`;
 }
+
+export function parseServerActionResponse<T>(response: T) {
+  return JSON.parse(JSON.stringify(response));
+}
