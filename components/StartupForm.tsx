@@ -20,7 +20,7 @@ const StartupForm = () => {
   const [pitch, setPitch] = useState("");
   // const [pitch, setPitch] = useState("# Startup Pitch ");
 
-  const handleformSubmit = async (prevState: any, formData: FormData) => {
+  const handleformSubmit = async (prevState: FormData, formData: FormData) => {
     try {
       const formValues = {
         title: formData.get("title") as string,
